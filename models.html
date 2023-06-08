@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Models</title>
+    <link rel="stylesheet" href="models.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="lamborghini-logo.png" type="image/x-icon" />
+</head>
+<body>
+    <div class="container">
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/hero-banner/2022/11_30_sterrato/gate_models_og_01.jpg"></div>
+      <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1570294646112-27ce4f174e38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bGFtYm9yZ2hpbml8ZW58MHx8MHx8&w=1000&q=80"></div>
+      <div class="swiper-slide"><img src="https://www.italpassion.fr/wp-content/uploads/2022/10/lamborghini-urus-S-2.jpg"></div>
+      <div class="swiper-slide"><img src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/gateway-family/limited-series/s_gateway_ls_02_M.jpg"></div>
+      <div class="swiper-slide"><img src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/urus/2023/02_09_refresh/urus_gate_hero_01.jpg"></div>
+      <div class="swiper-slide"><img src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/images-s/asterion_M.jpg"></div>
+      <div class="swiper-slide"><img src="https://cdn.motor1.com/images/mgl/6ZZBGl/s1/lamborghini-urus-by-g-power.jpg"></div>
+      <div class="swiper-slide"><img src="https://www.lambocars.com/wp-content/uploads/2021/04/lamborghini-huracan-evo-rwd.jpeg"></div>
+      <div class="swiper-slide"><img src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/homepage/families-gallery/ultimae_coupe_Compositing_4terzi_00.jpg"></div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+
+
+    </script>
+</body>
+</html>

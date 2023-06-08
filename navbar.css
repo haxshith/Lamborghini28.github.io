@@ -1,0 +1,129 @@
+
+nav{
+    height: 70px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+nav .brand{
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+nav .brand img{
+    height: 52px;
+}
+nav .brand a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+nav ul a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 5px;
+    transition: .5s ease;
+    position: relative;
+} 
+nav ul li a:hover{
+    color: grey;
+}
+nav ul li a::after
+{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: whitesmoke;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+nav ul li a:hover::after
+{
+    width: 100%;
+    transform: scaleX(1);
+}
+nav .fa{
+    color: white;
+    font-size: 2rem;
+    display: none;
+}
+@media screen and (max-width:600px){
+    nav .fa{
+        display: block;
+    }
+    nav ul .fa{
+        margin-bottom: 30px;
+    }
+    nav .brand img{
+        height: 40px;
+    }
+    nav .brand a{
+        font-size: 1.2rem;
+    }
+    nav ul{
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 35%;
+        background-color: #282828;
+        padding:5px;
+        height: 100vh;
+        z-index: 99;
+        transform: scaleX(0);
+        transition: .5s ease-in;
+    }
+    nav ul.menu{
+        transform: scaleX(1);
+    }
+    nav ul li{
+        margin: 7px;
+    }
+    nav ul li a{
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+}
+/*
+<section class="car-stats">
+    <div class="stats">
+      <div>
+        <h1
+        class="counter"
+        data-target="480"
+        data-speed="15"
+        >0</h1>
+        <h1>kmph</h1>
+        <h5>Top Speed</h5>
+      </div>
+      <div>
+        <h1
+        class="counter"
+        data-target="9"
+        data-speed="500"
+        >0</h1>
+        <h1>Gears</h1>
+        <h5>Gear Box</h5>
+      </div>
+      <div>
+        <h1
+        div="counter"
+        data-target="500"
+        data-speed="2"
+        >0</h1>
+        <h1>HP</h1>
+        <h5>Horse Power</h5>
+      </div>
+    </div>

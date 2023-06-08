@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.Home-main
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://media.gq-magazine.co.uk/photos/5d139057d7a701c1efbba0d3/4:3/w_1704,h_1278,c_limit/Urus-hp-GQ-4Dec17_b.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+.main-content {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+}
+.main-content h1{
+    font-size: 4rem;
+}
+.main-content p{
+    font-size: 1.2rem;
+    margin: .5rem 0;
+}
+.about{
+    padding: 1rem;
+    color: black;
+    text-align: center;
+}
+.about h1{
+    font-size: 3rem;
+  
+}
+.about h2{
+    text-align: center;
+}
+.about-sub {
+    display: flex;
+    text-align: justify;
+}
+.about-sub > img{
+    max-height: 350px;
+    width: 400px;
+    width: 90%;
+    animation: animateimage 1s linear;
+}
+@keyframes animateimage {
+    from{
+        transform: translateY(-15px);
+        opacity: 0.5;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.about-sub .sub-sub-about{
+    padding: 1rem;
+    text-align: right;
+    animation: animatetext .5s linear;
+}
+.specs {
+    background: url(https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/images-s/2021/07_07/gate_family_s_01_m.jpg);
+    background-size: cover;
+    background-color: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
+    min-height: 35em;
+    position: relative;
+    padding-top: 14em;
+    padding-bottom: 5em;
+    color: #fff;
+}
+.specs-header{
+    display: flex;
+    font-weight: 700;
+    font-size: 40px;
+}
+.one{
+    padding-left: .4em;
+    border-left: .1em #5bc7ca solid;
+}
+.two{
+    margin-left: 160px;
+    padding-left: .4em;
+    border-left: .1em #5bc7ca solid;
+}
+.specs li, .specs h2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    padding-left: 1.2rem;
+    border-left: 0.1em #5bc7ca solid;
+    align-items: center;
+}
+.specs h2 span{
+    align-items: center;
+}
+.specs-header, .specs ul, .specs span{
+    position: relative;
+    z-index: 1;
+    align-items: center;
+}
+.specs ul{
+    width: 40em;
+    margin-top: 3rem;
+}
+.panels{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 40em;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 8em;
+}
+
+.panel > div {
+    padding: 1em;
+    background-color: black;
+}
+.panel-sm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.panel:first-child, .panel:last-child{
+    padding: 0.4em;
+}
+.panel:first-child{
+    background-color: black;
+    color: #282828;
+    text-align: center;
+    font-size: 50px;
+}
+.panel:last-child{
+    background-color: black;
+    color: orangered;
+    text-align: center;
+    font-size: 50px;
+}
+.panel:nth-child(2){
+    background: url(https://content.api.news/v3/images/bin/2a57f9450fd0599e96ae9ac6ba902e79) no-repeat center ;
+
+}
+.panel:nth-child(3){
+    background: url(https://www.forbesindia.com/media/images/2022/Aug/img_192647_lamborghini.jpg) no-repeat center;
+}
+.panel:nth-child(2),.panel:nth-child(3){
+    background: cover;
+    position: relative;
+}
+.specs::before, .panel:nth-child(2):before, .panel:nth-child(3):before{
+    content: '';
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.icon {
+    font-size: 2em;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+}
+.panel:nth-child .icon{
+    border: 3px #fff solid;
+}
+.panel:nth-child(4).icon{
+    border: 3px #555 solid;
+}
+@keyframes animatetext {
+    from{
+        transform: translateY(-15px);
+        opacity: 0.5;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.Social-Handles h1{
+    max-width: 800px;
+    width: 90%;
+    background-color: #fff;
+    padding: 1rem .5rem;
+    margin: 1rem auto;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+.Social-Handles .company-logos{
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    font-size: 2rem;
+    transition: 1s ease-in;
+}
+.Social-Handles .company-logos .fa-brands:hover{
+    color: black;
+}
+.copyright{
+    text-align: center;
+}
+.cars
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(33, 32, 32, 0.75),rgba(49, 48, 48, 0.75)),url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/limitedlambos2-1618325640.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; 
+}
+@media screen and (max-width: 540px) {
+    *{
+        /* max-width: max-content; */
+        font-size: small;
+        margin: 0px;
+        padding: 0px;
+    }
+    .main-content h1{
+        font-size: 2rem;
+    }
+    .about{
+        /* color: aliceblue; */
+        font-size: 0.5rem;
+    }
+    .about-sub > img{
+        width: 100px;
+        height:auto;
+    }
+    .specs li, .specs h2{
+        display: flex;
+        position: relative;
+        justify-content: left;
+    }
+    .s-right{
+        margin-left: 100px;
+    }
+    .specs{
+        max-width: none;
+        min-height: 1em;
+    }
+
+    .specs li, .specs h2{
+        font-size: 1rem;
+    }
+    .specs ul{
+        font-size: 1rem;
+    }
+    /* .panel > div{
+        padding: 1em;
+    }
+    .panel:first-child, .panel:last-child{
+        font-size: 19px;
+        padding: 0.4em;
+    } */
+    .panel:nth-child(2){
+        width: auto;
+        height: auto;
+    }
+    .panel:nth-child(3){
+        width: auto;
+        height: auto;
+    }
+    .cars{
+        min-width: 50px;
+
+    }
+}    
